@@ -69,13 +69,30 @@ function runGame(x) {
 
   // store an element to output the result of the toss
   // output 'win' or 'loss'
+  let result = document.getElementById('result');
+  result.innerText = gameResult; 
 
   // store an element to output the number of games played
   // output # of games played (incremented when the function runs)
-
+  let count = document.getElementById('count');
+  count.innerText = gamesPlayed; 
   // store an element to output the number of games won
   // output # of games played (incremented when the function runs)
-
+  let wins = document.getElementById('wins');
+  wins.innerText = gamesWon; 
   // store an element to output the number of games lost
   // output # of games played (incremented when the function runs)
+  let losses = document.getElementById('losses');
+  losses.innerText = gamesLost; 
+}
+
+function resetScore(x) {
+
+gamesPlayed = 0;
+gamesWon = 0;
+gamesLost = 0;
+
+losses.innerText = gamesLost; 
+wins.innerText = gamesWon; 
+count.innerText = gamesPlayed; 
 }

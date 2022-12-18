@@ -26,4 +26,9 @@ hr {
 }
 button {
   cursor: pointer;
+  background-color: rgba(29, 208, 208, 0.736);
+}
+
+h1, h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
